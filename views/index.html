@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Schema</title>
+</head>
+
+<link rel="stylesheet" href="/public/stylesheets/style.css">
+
+<body>
+  <center>
+  <div class="contact">
+    <div class="container">
+      <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+        <h1>Students Form</h1>
+      </div>
+      <br><hr><br>
+      <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="contact-form">
+          <div id="success"></div>
+          <form action="/index" method="POST" id="joinForm">
+            <div class="control-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Student Name" required />
+            </div>
+            <br>
+            <hr><br>
+            <div class="control-group">
+              <input type="tel" name="number" class="form-control" id="number" placeholder="Student contact Number"
+                pattern="[789][0-9]{9}" required />
+            </div>
+            <br><hr><br>
+            <p>Hold Ctrl to select multiple subjects</p>
+            <label for="subject">Choose a subjects:</label>
+            <select name="subject" id="subject" multiple required>
+              <option value="maths">maths</option>
+              <option value="science">science</option>
+              <option value="english">english</option>
+              <option value="hindi">hindi</option>
+              <option value="gujarati">gujarati</option>
+              <option value="social science">social science</option>
+              <option value="environment">environment</option>
+            </select>
+            <br>
+            <br><hr><br>
+            <div class="control-group">
+              <input type="text" name="classs" class="form-control" id="classs" placeholder="Student Class" required />
+            </div>
+            <br><hr><br>
+            <div class="control-group">
+              <input type="number" name="year" class="form-control" id="year" placeholder="Student year" required />
+            </div>
+            <br><hr><br>
+            <p>Hold Ctrl to select multiple society or not select any one for none</p>
+            <label for="society">Choose a society:</label>
+            <select name="society" id="society" multiple>
+              <option value="academic and educaional">academic and educaional</option>
+              <option value="media and publication">media and publication</option>
+              <option value="political">political</option>
+              <option value="sports">sports</option>
+              <option value="reaserch">reaserch</option>
+            </select>
+            <br>
+            <br>
+            <hr>
+            <br>
+          <div>
+              <button class="btn" type="submit" value="Index" id="sendMessageButton">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</center>
+  <!-- Contact End -->
+</body>
+
+</html>
